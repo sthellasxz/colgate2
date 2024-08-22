@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Modelo de Layout</title>
+<link rel="stylesheet" href="assets/css/layout.scss">
+<style>
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(to right, #503fb1, #000000);
+}
+
+.container {
+    display: flex;
+    border: 3px solid #4c1e6b;
+    width: 70%;
+    height: 70%;
+    background: #7b6fbe;
+    border-radius: 20px; /* Adicionado para arredondar os cantos */
+}
+
+.sidebar {
+    width: 30%;
+    padding: 20px;
+    border-right: 1px solid #5008a3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.sidebar img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 2px solid #c196e9;
+}
+
+.sidebar .info {
+    text-align: center;
+}
+
+.sidebar .info p {
+    margin: 5px 0;
+}
+
+.sidebar .technologies {
+    text-align: left;
+    margin-top: 20px;
+}
+
+.sidebar .technologies p {
+    margin: 5px 0;
+}
+
+.content {
+    width: 70%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.content .section {
+    margin-bottom: 20px;
+}
+
+.content .section h2 {
+    margin: 0 0 10px 0;
+}
+
+.content .section .line {
+    width: 100%;
+    height: 2px;
+    background-color: #8400ff;
+}
+
+</style>
+</head>
+<body>
+<div class="container">
+<div class="sidebar">
+<img src="assets/images/Capturar.PNG" alt="Profile Picture">
+<div class="info">
+<p>Sthella Da Silva</p>
+<p>Sthellamiers0@gmail.com</p>
+<p></p>
+</div>
+<div class="technologies">
+<p><strong>Tecnologias</strong></p>
+<p>HTML</p>
+<p>CSS</p>
+<p>JavaScript</p>
+</div>
+</div>
+<div class="content">
+<div class="section">
+<h2>Meu Nome é Sthella, eu tenho 15 anos e atualmente estou cursando TI no Ensino Medio e em meu tempo livre jogo volei!</h2>
+<div class="line"></div>
+</div>
+<div class="section">
+<h2>Ensino Fundamental Concluido ( 1° ao 9°) e atualmente esta no Ensino Medio No Senac</h2>
+<div class="line"></div>
+</div>
+<div class="section">
+<h2>Informatica Basica, HTML/CSS, Marketing Digital e Progamaçao de jogo nivel basico</h2>
+<div class="line"></div>
+</div>
+</div>
+</div>
+</body>
+</html>
